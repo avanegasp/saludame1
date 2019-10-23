@@ -14,7 +14,7 @@ const app = express();
 
 app.get('/makers/:name', (req, res) => {
 var name = req.params.name
-  res.send('Hola ' + name.charAt(0).toUpperCase() + name.slice(1));
+  res.send("<h1>Hola " + name.charAt(0).toUpperCase() + name.slice(1) + "!</h1>");
 })
 
 
